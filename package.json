@@ -8,5 +8,8 @@
     "build": "node_modules/.bin/node-gyp configure build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "node-gyp": "^3.3.1"
+  }
 }
