@@ -5,3 +5,4 @@ config.yaml
 htpasswd
 storage/
 npm-debug.log
+out
