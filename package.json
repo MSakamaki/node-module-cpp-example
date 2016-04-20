@@ -2,11 +2,14 @@
   "name": "cpp-module-sample",
   "version": "0.0.1",
   "private": false,
-  "description": "",
-  "main": "./main.js",
+  "description": "node cpp(cmake) module example",
+  "main": "./index.js",
   "scripts": {
-    "build": "node_modules/.bin/node-gyp configure build"
+    "build": "node_modules/.bin/ncmake --build ./build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "node-cmake": "^1.2.0"
+  }
 }
