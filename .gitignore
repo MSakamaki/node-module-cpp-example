@@ -1,2 +1,6 @@
 node_modules
 build
+.npmrc
+config.yaml
+htpasswd
+storage/
