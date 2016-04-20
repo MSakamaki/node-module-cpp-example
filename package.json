@@ -1,0 +1,11 @@
+{
+  "name": "cpp-module-sample",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./main.js",
+  "scripts": {
+    "build": "node_modules/.bin/node-gyp configure build"
+  },
+  "author": "",
+  "license": "ISC"
+}
