@@ -1,6 +1,7 @@
 {
   "name": "cpp-module-sample",
   "version": "0.0.1",
+  "private": false,
   "description": "",
   "main": "./main.js",
   "scripts": {
