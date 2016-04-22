@@ -17,5 +17,6 @@ node test/run_test.js
 
 ### link
 
+ + [nan](https://github.com/nodejs/nan)
  + [node-cmake](https://www.npmjs.com/package/node-cmake)
  + [c++ addon example](https://nodejs.org/api/addons.html#addons_addon_examples)

@@ -8,4 +8,6 @@ list(APPEND CMAKE_MODULE_PATH
 
 find_package(NodeJS)
 
-add_nodejs_module(${PROJECT_NAME} src/main.cc)
+file(GLOB PROJECT_SRC src/*.cc)
+
+add_nodejs_module(${PROJECT_NAME} ${PROJECT_SRC})

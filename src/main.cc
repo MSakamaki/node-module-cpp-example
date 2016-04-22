@@ -1,16 +1,13 @@
-// hello.cc
 #include <nan.h>
+#include "sample.h"
 
-namespace demo {
+void Init(v8::Local<v8::Object> exports, v8::Local<v8::Object> module) {
 
-NAN_METHOD(hello) {
-  info.GetReturnValue().Set(Nan::New("world").ToLocalChecked());
+  exports->Set(Nan::New("sum").ToLocalChecked(),
+               Nan::New<v8::FunctionTemplate>(Sum)->GetFunction());
+
+  exports->Set(Nan::New("callback").ToLocalChecked(),
+               Nan::New<v8::FunctionTemplate>(RunCallback)->GetFunction());
 }
 
-NAN_MODULE_INIT(init) {
-    NAN_EXPORT(target, hello);
-}
-
-NODE_MODULE(addon, init)
-
-}  // namespace demo
+NODE_MODULE(addon, Init);
